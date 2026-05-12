@@ -1,0 +1,2 @@
+/home/itsnotme/Documents/Code/linux-monitor-service/build/CMakeFiles/edit_cache.dir
+/home/itsnotme/Documents/Code/linux-monitor-service/build/CMakeFiles/rebuild_cache.dir
