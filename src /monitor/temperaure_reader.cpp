@@ -1,9 +1,9 @@
 // src/monitor/temperature_reader.cpp
+#include "temperaure_reader.h"
 #include <iostream>
 #include <fstream>
-#include <string>
-#include <vector>
 #include <algorithm>
+
 // TODO: dynamically discover thermal zones from /sys/class/thermal/
 static std::vector<std::string> get_thermal_zones() {
     return {
@@ -31,18 +31,4 @@ int get_max_cpu_temp() {
     }
 
     return max_temp;
-}
-
-//test 
-int main(int argc, char const *argv[])
-{
-    std::cout << "Max CPU Temperature: " << get_max_cpu_temp() << "°C" << std::endl;
-    get_thermal_zones();
-    std::vector<std::string> zones = get_thermal_zones();
-    std::cout << "Thermal Zones:" << std::endl;
-    for (const auto& zone : zones) {  
-        std::cout << " - " << zone << std::endl;
-    }
-    std::cout << read_temp("/sys/class/thermal/thermal_zone0/temp") << "°C" << std::endl;
-    return 0;
 }

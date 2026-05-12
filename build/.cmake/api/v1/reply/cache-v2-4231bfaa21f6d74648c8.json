@@ -859,7 +859,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Project"
+			"value" : "linux-monitor-service"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1183,6 +1183,42 @@
 		},
 		{
 			"name" : "Project_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/itsnotme/Documents/Code/linux-monitor-service"
+		},
+		{
+			"name" : "linux-monitor-service_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/itsnotme/Documents/Code/linux-monitor-service/build"
+		},
+		{
+			"name" : "linux-monitor-service_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "linux-monitor-service_SOURCE_DIR",
 			"properties" : 
 			[
 				{

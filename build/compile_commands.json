@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/itsnotme/Documents/Code/linux-monitor-service/build",
+  "command": "/usr/lib64/ccache/g++ -I\"/home/itsnotme/Documents/Code/linux-monitor-service/src /monitor\" -g -std=gnu++17 -o CMakeFiles/monitor-service.dir/main.cpp.o -c /home/itsnotme/Documents/Code/linux-monitor-service/main.cpp",
+  "file": "/home/itsnotme/Documents/Code/linux-monitor-service/main.cpp",
+  "output": "CMakeFiles/monitor-service.dir/main.cpp.o"
+},
+{
+  "directory": "/home/itsnotme/Documents/Code/linux-monitor-service/build",
+  "command": "/usr/lib64/ccache/g++ -I\"/home/itsnotme/Documents/Code/linux-monitor-service/src /monitor\" -g -std=gnu++17 -o CMakeFiles/monitor-service.dir/src_/monitor/temperaure_reader.cpp.o -c \"/home/itsnotme/Documents/Code/linux-monitor-service/src /monitor/temperaure_reader.cpp\"",
+  "file": "/home/itsnotme/Documents/Code/linux-monitor-service/src /monitor/temperaure_reader.cpp",
+  "output": "CMakeFiles/monitor-service.dir/src_/monitor/temperaure_reader.cpp.o"
+}
+]

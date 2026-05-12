@@ -1,0 +1,5 @@
+# ninja log v7
+9	1162	1778548357284242679	CMakeFiles/monitor-service.dir/main.cpp.o	d1aa8c2469053422
+6	963	1778548392436144024	CMakeFiles/monitor-service.dir/src_/monitor/temperaure_reader.cpp.o	fcdc2aecc64ac8d
+3	1085	1778548392433144032	CMakeFiles/monitor-service.dir/main.cpp.o	d1aa8c2469053422
+1085	1242	1778548393515140996	monitor-service	84851c2a055eb397

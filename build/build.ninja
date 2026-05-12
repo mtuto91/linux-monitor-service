@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Project
+# Project: linux-monitor-service
 # Configurations: Debug
 # =============================================================================
 
@@ -40,6 +40,47 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /home/itsnotme/Documents/Code/linux-monitor-service/build/
+# =============================================================================
+# Object build statements for EXECUTABLE target monitor-service
+
+
+#############################################
+# Order-only phony target for monitor-service
+
+build cmake_object_order_depends_target_monitor-service: phony || .
+
+build CMakeFiles/monitor-service.dir/main.cpp.o: CXX_COMPILER__monitor-service_unscanned_Debug /home/itsnotme/Documents/Code/linux-monitor-service/main.cpp || cmake_object_order_depends_target_monitor-service
+  DEP_FILE = CMakeFiles/monitor-service.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"/home/itsnotme/Documents/Code/linux-monitor-service/src /monitor"
+  OBJECT_DIR = CMakeFiles/monitor-service.dir
+  OBJECT_FILE_DIR = CMakeFiles/monitor-service.dir
+
+build CMakeFiles/monitor-service.dir/src_/monitor/temperaure_reader.cpp.o: CXX_COMPILER__monitor-service_unscanned_Debug /home/itsnotme/Documents/Code/linux-monitor-service/src$ /monitor/temperaure_reader.cpp || cmake_object_order_depends_target_monitor-service
+  DEP_FILE = CMakeFiles/monitor-service.dir/src_/monitor/temperaure_reader.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"/home/itsnotme/Documents/Code/linux-monitor-service/src /monitor"
+  OBJECT_DIR = CMakeFiles/monitor-service.dir
+  OBJECT_FILE_DIR = CMakeFiles/monitor-service.dir/src_/monitor
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target monitor-service
+
+
+#############################################
+# Link the executable monitor-service
+
+build monitor-service: CXX_EXECUTABLE_LINKER__monitor-service_Debug CMakeFiles/monitor-service.dir/main.cpp.o CMakeFiles/monitor-service.dir/src_/monitor/temperaure_reader.cpp.o
+  DEP_FILE = CMakeFiles/monitor-service.dir/link.d
+  FLAGS = -g
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/monitor-service.dir/link.d
+  OBJECT_DIR = CMakeFiles/monitor-service.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = monitor-service
+  TARGET_PDB = monitor-service.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -75,12 +116,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/itsnotme/Documents/Code/linux-monitor-service/build
 
-build all: phony
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony monitor-service
 
 # =============================================================================
 # Built-in targets
